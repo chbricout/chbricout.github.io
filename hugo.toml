@@ -1,0 +1,10 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Charles Bricout'
+
+[markup.goldmark.renderer]
+    unsafe= true
+
+[params]
+    image_folder = "images"
+    image_ext = "webp"

@@ -1,0 +1,16 @@
+{{define "style"}}
+{{ $headerStyle := resources.Get "styles/home.css" }}
+<link rel="stylesheet" href="{{$headerStyle.RelPermalink}}">
+{{end}}
+
+{{define "main"}}
+{{$path := (partial "adapt_img.html" "me")}}
+<div class="centered-content" style="display: flow-root;margin-bottom: 20px;">
+        {{ with resources.Get $path }}
+        <img src="{{ .RelPermalink }}" class="me-img">
+        {{end}}
+        <div style="margin-top: -10px;">
+        {{.Content}}
+        </div>
+</div>
+{{end}}

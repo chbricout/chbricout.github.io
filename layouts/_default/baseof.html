@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+        {{ .Site.Title }}
+        {{ end }}
+    </title>
+
+
+    {{ $headerStyle := resources.Get "styles/base.css" }}
+    <link rel="stylesheet" href="{{$headerStyle.RelPermalink}}">
+
+    {{ block "style" . }}
+    {{end}}
+</head>
+
+<body>
+    {{- $page := . }}
+    {{$class:=""}}
+    <div class="floating-size">
+        This page download only <span id="hugo-sizer">XX</span> kB.
+    </div>
+    <div class="header">
+        <div class="title-div">
+            <h1 class="center-text">
+                Charles Bricout
+            </h1>
+        </div>
+        {{$endIndex := (sub (len site.Menus.nav) 1)}}
+        <div class="centered-content center-text">
+            {{range $index, $element := site.Menus.nav}}
+            {{- if $page.IsMenuCurrent .Menu $element }}
+            {{$class = "active"}}
+            {{else}}
+            {{$class = ""}}
+            {{end}}
+            [<a href="{{$element.URL}}" class="{{$class}}">{{$element.Name}}</a>]
+            {{if ne $index $endIndex}}
+            --
+            {{end}}
+            {{end}}
+
+        </div>
+
+    </div>
+
+    <main>
+
+        {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+
+    </main>
+
+    {{ block "footer" . }}
+    <footer>
+        <h2>Links</h2>
+
+        <div class="footer-contact">
+               <a href="mailto:bricout.charles@outlook.com">Mail</a> -- 
+                <a href="https://www.linkedin.com/in/charles-bricout">LinkedIn</a> -- 
+                <a href="https://github.com/chbricout">GitHub</a>
+        </div>
+    </footer>
+
+    {{ end }}
+</body>
+
+</html>
