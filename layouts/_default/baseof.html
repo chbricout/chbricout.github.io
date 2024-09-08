@@ -36,7 +36,7 @@
             {{else}}
             {{$class = ""}}
             {{end}}
-            [<a href="{{$element.URL}}" class="{{$class}}">{{$element.Name}}</a>]
+             <a href="{{$element.URL}}" class="{{$class}}" style="margin-inline: 5px;"> ./{{$element.Name}} </a> 
             {{if ne $index $endIndex}}
             --
             {{end}}
@@ -59,9 +59,11 @@
         <h2>Links</h2>
 
         <div class="footer-contact">
-               <a href="mailto:bricout.charles@outlook.com">Mail</a> -- 
-                <a href="https://www.linkedin.com/in/charles-bricout">LinkedIn</a> -- 
-                <a href="https://github.com/chbricout">GitHub</a>
+               [<a href="mailto:bricout.charles@outlook.com">Mail</a>] -- 
+                [<a href="https://www.linkedin.com/in/charles-bricout">LinkedIn</a>] -- 
+                [<a href="https://github.com/chbricout">GitHub</a>] --
+                [<a href="Charles_Bricout___CV.pdf">CV</a>]
+
         </div>
     </footer>
 

@@ -14,6 +14,7 @@ Here are some interesting links related to low-tech web and sustainability:
 - [Dither Me This](https://doodad.dev/dither-me-this/): A really cool image dithering program.
 - [LowTech and IT](https://lownum.fr/): A French project led by a teacher from *Université de Technologie de Compiègne*.
 - [Website Carbon](https://www.websitecarbon.com/): A tool to estimate the carbon emissions of your websites.
+- [Gemini](https://geminiprotocol.net/docs/tech-overview.gmi) : A client-server protocol serving *gemtext* documents for a simpler web.
 
 ### Climate Workshop
 
