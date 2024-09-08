@@ -1,0 +1,18 @@
+.me-img{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+}
+
+.centered-content h2{
+    margin-block:10px;
+}
+
+.centered-content h3{
+    margin-block:8px;
+}
+
+.centered-content p{
+    margin-block: 0px;
+}
