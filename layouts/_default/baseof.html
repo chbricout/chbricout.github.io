@@ -8,7 +8,8 @@
         {{ end }}
     </title>
 
-
+    <!-- Prevent Favicon request -->
+    <link rel="icon" href="data:,">
     {{ $headerStyle := resources.Get "styles/base.css" }}
     <link rel="stylesheet" href="{{$headerStyle.RelPermalink}}">
 
