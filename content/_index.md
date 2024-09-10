@@ -14,7 +14,7 @@ My research, under the supervision of Sylvain Bouix and Samira Ebrahimi Kahou, f
 
 ### Research Interests
 
-Beyond the medical space, I'm also passionate about Open Science and making AI more sustainable. Right now, deep learning is often data-inefficient, power-hungry, and behaves like a black box. Plus, designing or scaling models is painfully hard with loads of hyperparameters to try. I think there’s huge potential in improving our methods and exploring alternative approaches like Gaussian Processes. These are the topics I’d love to dive into during a PhD.
+Beyond the medical space, I'm also passionate about Open Science and making AI more sustainable. Right now, deep learning is often data-inefficient, power-hungry, and behaves like a black box. Plus, designing or scaling models is painfully hard with loads of hyperparameters to try. I think there’s huge potential in improving our methods and exploring alternative approaches like Gaussian Processes or Neurosymbolic AI. These are the topics I’d love to dive into during a PhD.
 
 ### Involvement
 
