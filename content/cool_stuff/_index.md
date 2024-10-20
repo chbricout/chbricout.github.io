@@ -18,7 +18,8 @@ Here are some interesting links related to low-tech web and sustainability:
 
 ### Climate Workshop
 
-I enjoy (and recommend) the [different Fresk workshops](https://wiki.climatefresk.org/?title=Les_fresques_amies), with the most well-known being the [Climate Fresk](https://climatefresk.org/world/). I’ve also participated in the Planetary Frontier's, *Numérique*'s (digital), and Biodiversity's Fresks, which are also excellent (though currently available only in French). Additionally, I had a fun and educational time with the [2 Tons workshop](https://en.2tonnes.org/), which helped me understand how I can aim to reach 2 tons of CO2 emissions by 2050 on a personal level.
+I’m an animator for the [2 Tons workshop](https://en.2tonnes.org/), which is a fun way to learn about our carbon footprint and how we can, both individually and collectively, shift our lifestyles to reach 2 tons of CO2 per person per year by 2050.
+I also enjoy (and recommend) the [different Fresk workshops](https://wiki.climatefresk.org/?title=Les_fresques_amies), with the most well-known being the [Climate Fresk](https://climatefresk.org/world/). I’ve also participated in the Planetary Frontier's, *Numérique*'s (digital), and Biodiversity's Fresks, which are also excellent (though currently available only in French).
 
 ### Climate Games
 
