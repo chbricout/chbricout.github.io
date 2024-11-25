@@ -22,5 +22,10 @@ Outside the lab, I stay pretty active in the community. I'm part of ETS’s musi
 
 As a project manager in ETS's sustainable committee, [Tributerre](https://tributerre.neocities.org/), I redesigned our old, resource-heavy Wix website with a lightweight, eco-friendly version that’s currently hosted on Neocities. We’re planning to host it on a Raspberry Pi Zero powered by an unused solar panel from one of the labs at ETS. As a member of the student association, I’ve also been pushing for the use of sewable patches instead of T-shirts for clubs and associations to help reduce waste.
 
+I am also an animator for two workshops:
+- The [2 Tons workshop](https://en.2tonnes.org/), a fun game that teaches how to reduce personal and global carbon footprints to 2 tons of CO2eq by 2050 through individual and collective decisions.
+- The [Low-Tech Fresk](https://fresquedeslowtechs.org/) (French only), which demonstrates how the Low-Tech approach addresses the pressing problems of our current system.
+
+
 
 
