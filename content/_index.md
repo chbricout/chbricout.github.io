@@ -8,7 +8,7 @@ layout = 'home'
 
 ### About Me
 
-I'm currently a master's student in Computer Science at *École de Technologie Supérieure (ETS)* and Mila in Montréal, working in the [Neuro-iX lab](https://neuro-ix.github.io/). At the same time, I'm also completing a *Diplôme d'ingénieur* (equivalent to a combined BS/MS) at *Université de Technologie de Compiègne* / Sorbonne Alliance in France, with a specialization in AI and Data Science. I am looking for PhD opportunities in Sustainable / Efficient AI.
+I'm currently a master's student in Computer Science at *École de Technologie Supérieure (ETS)* and Mila in Montréal, working in the [Neuro-iX lab](https://neuro-ix.github.io/). At the same time, I'm also completing a *Diplôme d'Ingénieur* (equivalent to a combined BS/MS) at *Université de Technologie de Compiègne* / Sorbonne Alliance in France, with a specialization in AI and Data Science. I am looking for PhD opportunities in Sustainable / Efficient AI.
 
 My research, under the supervision of Sylvain Bouix and Samira Ebrahimi Kahou, focuses on automating brain MRI quality control using deep learning. Specifically, I'm working on detecting and quantifying motion artifacts in 3D T1-weighted brain MRIs. It's a tricky challenge due to limited data and the high memory demand of training convolutional neural networks on 3D volumes.
 

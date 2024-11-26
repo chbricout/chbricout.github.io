@@ -1,0 +1,19 @@
+[[talks]]
+name = "A Deep Learning Framework for Detection of Motion Artifact in Brain MRI Volumes"
+venue = "Medical Imaging Seminar"
+place = "École de Technologie Supérieure, Montréal"
+date = "April 2024"
+[[talks]]
+name = "Parlons Intelligence Artificielle"
+venue = "Panelist at a virtual symposium for Grade 9-12 students"
+place = "Let’s Talk Science"
+date = "December 7th"
+description = "I discussed the importance of AI research in healthcare and shared insights on studying AI"
+link = "https://parlonssciences.ca/evenements/calendrier-du-programme/parlons-intelligence-artificielle"
+
+[papers]
+[[papers.submitted]]
+name = "Improving Quality Control of MRI Images Using Synthetic Motion Data"
+venue = "ISBI 2025"
+place = "Houston, Texas"
+date = "April 2025"
