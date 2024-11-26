@@ -29,7 +29,7 @@
     {{ with (index . "papers")  }}
         <!--Published articles -->
         {{if collections.IsSet . "published"}}
-        <h3>Published</h2>
+        <h3>Published</h3>
             {{ with (index . "published")  }}
             <ul>
                 {{ range  . }}
@@ -54,7 +54,7 @@
 
         <!--Submitted articles -->
         {{if collections.IsSet . "submitted"}}
-        <h3>Submitted</h2>
+        <h3>Submitted</h3>
             {{ with (index . "submitted")  }}
             <ul>
                 {{ range  . }}
