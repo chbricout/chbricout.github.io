@@ -12,7 +12,7 @@ description = "I discussed the importance of AI research in healthcare and share
 link = "https://parlonssciences.ca/evenements/calendrier-du-programme/parlons-intelligence-artificielle"
 
 [papers]
-[[papers.submitted]]
+[[papers.accepted]]
 name = "Improving Quality Control of MRI Images Using Synthetic Motion Data"
 venue = "ISBI 2025"
 place = "Houston, Texas"

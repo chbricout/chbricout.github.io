@@ -1,85 +1,110 @@
 {{define "main"}}
 <div class="centered-content">
-{{ with resources.Get "talks.toml" }}
-{{ with . | transform.Unmarshal }}
+    {{ with resources.Get "talks.toml" }}
+    {{ with . | transform.Unmarshal }}
 
-<h2>Talks</h2>
-    {{ with (index . "talks")  }}
+    <h2>Talks</h2>
+    {{ with (index . "talks") }}
 
     <ul>
-        {{ range  . }}
-            <li>
-                {{if collections.IsSet . "link"}}
-                <a href="{{index . "link"}}">
+        {{ range . }}
+        <li>
+            {{if collections.IsSet . "link"}}
+            <a href="{{index . " link"}}">
                 {{end}}
                 "{{index . "name"}}"
                 {{if collections.IsSet . "link"}}
-                </a>
-                {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
-                {{if collections.IsSet . "description"}}
-                {{index . "description"}}.
-                {{end}}
-                
-            </li> 
+            </a>
+            {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
+            {{if collections.IsSet . "description"}}
+            {{index . "description"}}.
+            {{end}}
+
+        </li>
         {{ end }}
     </ul>
     {{end}}
 
-<h2>Papers</h2>
-    {{ with (index . "papers")  }}
-        <!--Published articles -->
-        {{if collections.IsSet . "published"}}
-        <h3>Published</h3>
-            {{ with (index . "published")  }}
-            <ul>
-                {{ range  . }}
-                    <li>
-                        {{if collections.IsSet . "link"}}
-                        <a href="{{index . "link"}}">
-                        {{end}}
-                        "{{index . "name"}}"
-                        {{if collections.IsSet . "link"}}
-                        </a>
-                        {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
-                        {{if collections.IsSet . "description"}}
-                        {{index . "description"}}.
-                        {{end}}
-                        
-                    </li> 
-                {{ end }}
-            </ul>
+    <h2>Papers</h2>
+    {{ with (index . "papers") }}
+    <!--Published articles -->
+    {{if collections.IsSet . "published"}}
+    <h3>Published</h3>
+    {{ with (index . "published") }}
+    <ul>
+        {{ range . }}
+        <li>
+            {{if collections.IsSet . "link"}}
+            <a href="{{index . " link"}}">
+                {{end}}
+                "{{index . "name"}}"
+                {{if collections.IsSet . "link"}}
+            </a>
+            {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
+            {{if collections.IsSet . "description"}}
+            {{index . "description"}}.
             {{end}}
-        {{ end }}
-        <!--End Published articles -->
 
-        <!--Submitted articles -->
-        {{if collections.IsSet . "submitted"}}
-        <h3>Submitted</h3>
-            {{ with (index . "submitted")  }}
-            <ul>
-                {{ range  . }}
-                    <li>
-                        {{if collections.IsSet . "link"}}
-                        <a href="{{index . "link"}}">
-                        {{end}}
-                        "{{index . "name"}}"
-                        {{if collections.IsSet . "link"}}
-                        </a>
-                        {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
-                        {{if collections.IsSet . "description"}}
-                        {{index . "description"}}.
-                        {{end}}
-                        
-                    </li> 
-                {{ end }}
-            </ul>
-            {{end}}
+        </li>
         {{ end }}
-        <!--End Submitted articles -->
+    </ul>
+    {{end}}
+    {{ end }}
+    <!--End Published articles -->
+
+    <!--Accepted articles -->
+    {{if collections.IsSet . "accepted"}}
+    <h3>Accepted</h3>
+    {{ with (index . "accepted") }}
+    <ul>
+        {{ range . }}
+        <li>
+            {{if collections.IsSet . "link"}}
+            <a href="{{index . " link"}}">
+                {{end}}
+                "{{index . "name"}}"
+                {{if collections.IsSet . "link"}}
+            </a>
+            {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
+            {{if collections.IsSet . "description"}}
+            {{index . "description"}}.
+            {{end}}
+
+        </li>
+        {{ end }}
+    </ul>
+    {{end}}
+    {{ end }}
+    <!--End Accepted articles -->
+
+    <!--Submitted articles -->
+    {{if collections.IsSet . "submitted"}}
+    <h3>Submitted</h3>
+    {{ with (index . "submitted") }}
+    <ul>
+        {{ range . }}
+        <li>
+            {{if collections.IsSet . "link"}}
+            <a href="{{index . " link"}}">
+                {{end}}
+                "{{index . "name"}}"
+                {{if collections.IsSet . "link"}}
+            </a>
+            {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
+            {{if collections.IsSet . "description"}}
+            {{index . "description"}}.
+            {{end}}
+
+        </li>
+        {{ end }}
+    </ul>
+    {{end}}
+    {{ end }}
+    <!--End Submitted articles -->
 
     {{end}}
 
-{{end}}
-{{end}}
+    {{end}}
+    {{end}}
 </div>
 {{end}}
