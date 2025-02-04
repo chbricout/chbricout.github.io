@@ -60,7 +60,7 @@
         {{ range . }}
         <li>
             {{if collections.IsSet . "link"}}
-            <a href="{{index . " link"}}">
+            <a href='{{index . "link"}}'>
                 {{end}}
                 "{{index . "name"}}"
                 {{if collections.IsSet . "link"}}
