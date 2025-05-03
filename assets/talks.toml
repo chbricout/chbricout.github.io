@@ -7,9 +7,16 @@ date = "April 2024"
 name = "Parlons Intelligence Artificielle"
 venue = "Panelist at a virtual symposium for Grade 9-12 students"
 place = "Let’s Talk Science"
-date = "December 7th"
+date = "December 7th 2023"
 description = "I discussed the importance of AI research in healthcare and shared insights on studying AI"
 link = "https://parlonssciences.ca/evenements/calendrier-du-programme/parlons-intelligence-artificielle"
+[[talks]]
+name = "Quantification des artefacts de mouvement dans les IRMs T1 : approche basée sur l'apprentissage synthétique"
+venue = "Congrès ACFAS 2025"
+place = "École de Technologie Supérieure, Montréal"
+date = "May 2025"
+link = "https://www.acfas.ca/evenements/congres/92/contribution/quantification-artefacts-mouvement-irms-t1-approche-basee"
+
 
 [papers]
 [[papers.accepted]]
