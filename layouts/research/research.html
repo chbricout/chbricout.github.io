@@ -1,4 +1,11 @@
+{{define "style"}}
+{{ $headerStyle := resources.Get "styles/talks.css" }}
+<link rel="stylesheet" href="{{$headerStyle.RelPermalink}}">
+{{end}}
+
 {{define "main"}}
+
+{{.Content}}
 <div class="centered-content">
     {{ with resources.Get "talks.toml" }}
     {{ with . | transform.Unmarshal }}
