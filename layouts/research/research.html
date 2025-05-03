@@ -5,8 +5,9 @@
 
 {{define "main"}}
 
-{{.Content}}
 <div class="centered-content">
+{{.Content}}
+
     {{ with resources.Get "talks.toml" }}
     {{ with . | transform.Unmarshal }}
 
