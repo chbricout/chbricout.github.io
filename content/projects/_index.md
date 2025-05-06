@@ -10,7 +10,7 @@ draft = false
 During my Master thesis in the [Neuro-iX](https://neuro-ix.github.io/) lab at École de Technologie Supérieure, I developed a few tools :
 
 - [**Agitation**](https://github.com/Neuro-iX/agitation) : The outcome of my thesis : a deep learning based tool to quantify motion in T1w brain MRI. We provide a simple CLI for dataset and subject level inference, integration with [Boutiques](https://boutiques.github.io/) and [Nipoppy](https://nipoppy.readthedocs.io/en/latest/) and a standalone [container](https://hub.docker.com/repository/docker/chbricout/agitation/general). 
-- [**Brainscore**](https://github.com/Neuro-iX/brainscore) : A simple web tool to score volume based on the amount of motion artifact and the type of expression.
+- [**MotionScore**](https://github.com/Neuro-iX/MotionScore) : A simple web tool to score volume based on the amount of motion artifact and the type of expression.
 
 
 ### Current Personal Projects (More on [GitHub](https://github.com/chbricout))
