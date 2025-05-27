@@ -6,7 +6,7 @@
 {{define "main"}}
 
 <div class="centered-content">
-{{.Content}}
+    {{.Content}}
 
     {{ with resources.Get "talks.toml" }}
     {{ with . | transform.Unmarshal }}
@@ -43,7 +43,7 @@
         {{ range . }}
         <li>
             {{if collections.IsSet . "link"}}
-            <a href="{{index . " link"}}">
+            <a href="'{{index . " link"}}'>
                 {{end}}
                 "{{index . "name"}}"
                 {{if collections.IsSet . "link"}}
