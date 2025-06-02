@@ -25,3 +25,9 @@ venue = "ISBI 2025"
 place = "Houston, Texas"
 date = "April 2025"
 link = "https://doi.org/10.1109/ISBI60581.2025.10981056"
+
+[[papers.submitted]]
+name = "Estimating Head Motion in Structural MRI Using a Deep Neural Network Trained on Synthetic Artifacts"
+venue = "Imaging Neuroscience"
+date = "May 2025"
+link = "https://arxiv.org/abs/2505.23916"

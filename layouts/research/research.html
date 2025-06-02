@@ -93,13 +93,14 @@
         {{ range . }}
         <li>
             {{if collections.IsSet . "link"}}
-            <a href="{{index . " link"}}">
+            <a href='{{index . "link"}}'>
                 {{end}}
                 "{{index . "name"}}"
                 {{if collections.IsSet . "link"}}
             </a>
-            {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
-            {{if collections.IsSet . "description"}}
+            {{end}}, {{index . "venue"}},{{ if collections.IsSet . "place"}} {{index . "place"}},{{end}} {{index .
+            "date"}}.
+            {{if collections.IsSet . "description"}}1
             {{index . "description"}}.
             {{end}}
 
