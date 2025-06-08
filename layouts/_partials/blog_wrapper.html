@@ -1,0 +1,59 @@
+
+<style>
+    {{partial "blog_css.css" . | safeCSS}}
+</style>
+    
+
+<div class="blog-layout">
+    <div class="blog-menu">
+        <h3> Blog's Articles</h3>
+            <h4>Filter by tag</h4>
+
+        <div class="blog-filter-div">
+            <div class="filter-item">
+                    <input type="radio" name="filter" id="all" class="filter-group" checked>
+                    <label for="all" class="filter-btn">All</label>
+                </div>
+            {{ range (where .Site.AllPages "Kind" "term" ) }}
+            <div class="filter-item">
+                    <input type="radio" name="filter" id="{{.LinkTitle}}" class="filter-group">
+                    <label for="{{.LinkTitle}}" class="filter-btn">{{.LinkTitle}}</label>
+                </div>
+            {{end}}
+        </div>
+
+        <div class="blog-card-container">
+        {{ $pages := where site.RegularPages "Type" "blog" }}
+        {{$currentPage := .}}
+        {{ range $index, $page:= $pages }}
+
+        {{$tags := $page.GetTerms "blog/tags"}}
+
+        <a href="{{$page.RelPermalink}}" class="blog-card {{range $tags}}  {{.LinkTitle}} {{end}} {{if eq $page $currentPage}} blog-card-selected{{end}}">
+            <span class="card-title">{{$page.Title}} </span> 
+            <div class="blog-card-footer">
+
+            <div class="tag-container">
+            {{range $tags}}
+            <span class="tag">
+                {{.LinkTitle}}
+            </span>
+            {{end}}
+            </div>
+            <span>{{$page.Date | time.Format .Site.Params.dateFormat}}</span>
+            </div>
+
+        </a>
+        {{end}}
+        </div>
+
+    </div>
+    <div class="blog-content">
+        {{block "main" .}}
+        <h2>{{.Title}}</h2>
+        <span style="margin-left: auto; font-style:italic">{{.Date  | time.Format .Site.Params.dateFormat}}</span>
+        
+        {{.Content}}
+        {{end}}
+    </div>
+</div>

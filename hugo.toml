@@ -1,10 +1,22 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
+languageCode = 'en-GB'
 title = 'Charles Bricout'
 
+
+
 [markup.goldmark.renderer]
-    unsafe= true
+unsafe = true
 
 [params]
-    image_folder = "images"
-    image_ext = "webp"
+image_folder = "images"
+image_ext = "webp"
+dateFormat = "02/01/06"
+
+[taxonomies]
+tag = 'blog/tags'
+
+
+[markup]
+  [markup.highlight]
+    LineNos=true
+    style="catppuccin-latte"

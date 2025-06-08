@@ -37,7 +37,7 @@
             {{else}}
             {{$class = ""}}
             {{end}}
-             <a href="{{$element.URL}}" class="{{$class}}" style="margin-inline: 5px;"> ./{{$element.Name}} </a> 
+            <a href="{{$element.URL}}" class="{{$class}}" style="margin-inline: 5px;"> ./{{$element.Name}} </a>
             {{if ne $index $endIndex}}
             --
             {{end}}
@@ -49,9 +49,13 @@
 
     <main>
 
+        {{ if eq .Section "blog" }}
+        {{ partial "blog_wrapper.html" . }}
+        {{ else }}
         {{ block "main" . }}
         <!-- The part of the page that begins to differ between templates -->
         {{ end }}
+        {{end}}
 
     </main>
 
@@ -60,11 +64,11 @@
         <h2>Links</h2>
 
         <div class="footer-contact">
-               [<a href="mailto:bricout.charles@outlook.com">Mail</a>] -- 
-                [<a href="https://www.linkedin.com/in/charles-bricout">LinkedIn</a>] -- 
-                [<a href="https://github.com/chbricout">GitHub</a>] --
-                [<a href="Charles_Bricout___CV.pdf">CV</a>] --
-                [<a href="https://scholar.google.com/citations?user=W3_bS1sAAAAJ">Scholar</a>]
+            [<a href="mailto:bricout.charles@outlook.com">Mail</a>] --
+            [<a href="https://www.linkedin.com/in/charles-bricout">LinkedIn</a>] --
+            [<a href="https://github.com/chbricout">GitHub</a>] --
+            [<a href="Charles_Bricout___CV.pdf">CV</a>] --
+            [<a href="https://scholar.google.com/citations?user=W3_bS1sAAAAJ">Scholar</a>]
 
         </div>
     </footer>

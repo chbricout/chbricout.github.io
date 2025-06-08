@@ -1,0 +1,133 @@
+main{
+    overflow:hidden;
+    min-height: 0;
+}
+
+.blog-layout {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 10px;
+    gap: 10px;
+    height: 100%;
+}
+
+.blog-card-container{
+    max-height: 100%;
+}
+
+.blog-menu {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-right:#4c4f69 1px solid;
+    overflow-y: scroll;
+    height:100%;
+}
+
+.blog-menu h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.blog-menu h4 {
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.blog-filter-div {
+    margin-block: 5px;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    margin-bottom: 10px;
+
+}
+
+.filter-item label{
+    background-color: white;
+    border: 1px #179299 solid;
+    border-radius: 99em;
+    padding-inline:8px;
+    padding-block: 1px;
+    cursor:pointer;
+}
+
+.filter-item input{
+    display: none;
+}
+
+.filter-item input:checked ~ label{
+    background-color: #179299;
+    color:white;
+}
+
+.blog-card {
+    background-color: #fcfcfd;
+    border-radius: 0.5cap;
+    margin-block: 5px;
+    margin-right: 10px;
+    padding-inline: 5px;
+    padding-block: 5px;
+    text-decoration: none;
+    display:none;
+    flex-direction: column;
+    color:#4c4f69;
+}
+
+.blog-card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-title{
+    text-align: start;
+}
+
+
+.blog-card:hover {
+    background-color: #babac4;
+    text-decoration: none;
+
+}
+
+.blog-card-selected {
+    border: 1px #4c4f69 solid;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    text-align: justify;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    margin-inline:10px;
+
+    h1,h2,h3{
+        text-align: center;
+    }
+}
+
+.tag{
+    background-color: white;
+    border: 1px #179299 solid;
+    border-radius: 99em;
+    padding-inline:8px;
+    padding-block: 1px;
+    font-size: 0.8rem;
+}
+
+.tag-container{
+    display: flex;
+    flex-direction: row;
+    margin-block:5px;
+    gap:3px;
+}
+
+code{
+    overflow-x: scroll;
+    max-width:100%;
+    display: block;
+}

@@ -1,0 +1,13 @@
+
+/* Filtering logic */
+.blog-filter-div:has(#all:checked) ~ .blog-card-container > .blog-card {
+        display:flex;
+}
+
+{{$terms := (where .Site.AllPages "Kind" "term")}}
+{{$endIndex := (sub (len $terms) 1)}}
+{{range $index, $element := $terms}}
+.blog-filter-div:has(#{{.LinkTitle}}:checked)~ .blog-card-container > .blog-card.{{.LinkTitle}}{{if ne $index $endIndex}},{{end}}
+{{end}}{
+        display:flex;
+}
