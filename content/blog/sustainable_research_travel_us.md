@@ -5,7 +5,6 @@ date = "2025-06-08"
 draft=false
 +++
 
-# That Time I Travelled Montréal - Houston by Train
 
 In April 2025, I had to travel from Montréal in Québec to Houston, Texas to attend the ISBI25 conference. 
 Of course the cheapest, and fastest, option was the plane with a direct flight of 4 hours.
