@@ -11,6 +11,7 @@ unsafe = true
 image_folder = "images"
 image_ext = "webp"
 dateFormat = "02/01/06"
+math =true
 
 [taxonomies]
 tag = 'blog/tags'
@@ -20,3 +21,10 @@ tag = 'blog/tags'
   [markup.highlight]
     LineNos=true
     style="catppuccin-latte"
+   [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
