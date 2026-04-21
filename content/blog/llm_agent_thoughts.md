@@ -6,7 +6,7 @@ draft=false
 +++
 
 Recently, as a lot of people, I heard about OpenClaw. For those who have not heard about it yet, it is an Open Source software that allows a, usually remote, LLM to take action on the computer on which it is installed, usually a self-hosted server.
-Using the computer, and with a bot more setup, you can't allow him to connect to your account on multiple services and let him run pretty much anything you want.
+Using the computer, and with a bot more setup, you can allow him to connect to your account on multiple services and let him run pretty much anything you want.
 The task I have heard OpenClaw being good at were things like:
 
 - Managing your calendar
@@ -41,7 +41,7 @@ I feel like this boils down to a will to delegate living. You do not decide how 
 
 This is very scary to me. Are we to lose our capability to place ourselves in time the same way GPS destroyed our capacity to place ourselves in space ? Or maybe it's the capacity to talk to other human being that will go first, or the capacity to understand a text that has not been preprocessed by an AI to make it simpler (while removing some important parts).
 
-Maybe I am just very pessimistic, but I can help to see this as an insanely slippery slope. Our brains haven't evolved yet to live in our modern world, it has already been high jacked by ultra processed food. High sugar and fat content is rare in the wild, our brain still believes that we should eat a lot of it while it is accessible. In the very same way, if something can make us spend less energy by removing basic cognitive tasks, it is hard to imagine that we will resist it.
+Maybe I am just very pessimistic, but I can't help to see this as an insanely slippery slope. Our brains haven't evolved yet to live in our modern world, it has already been high jacked by ultra processed food. High sugar and fat content is rare in the wild, our brain still believes that we should eat a lot of it while it is accessible. In the very same way, if something can make us spend less energy by removing basic cognitive tasks, it is hard to imagine that we will resist it.
 
 Of course, it can be tedious to write boilerplate code, but it also makes you plan the architecture of the software you write, and gives you potentially new idea in the process.
 Reading a book is not natural for our brain, it is long and can be painful, and it's even worse when the content ended up being useless for us. The thing is that I am not sure that there is such a thing. Maybe this very blog article will give you an incredible idea or will start a thought process that will not resolve before many weeks.
