@@ -6,7 +6,7 @@ draft=false
 +++
 
 Recently, as a lot of people, I heard about OpenClaw. For those who have not heard about it yet, it is an Open Source software that allows a, usually remote, LLM to take action on the computer on which it is installed, usually a self-hosted server.
-Using the computer, and with a bot more setup, you can allow him to connect to your account on multiple services and let him run pretty much anything you want.
+Using the computer, and with a bot more setup, you can't allow him to connect to your account on multiple services and let him run pretty much anything you want.
 The task I have heard OpenClaw being good at were things like:
 
 - Managing your calendar
