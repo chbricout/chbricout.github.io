@@ -31,3 +31,10 @@ name = "Estimation of head motion in structural MRI and its impact on cortical m
 venue = "Frontiers in Neuroscience"
 date = "May 2026"
 link = "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1817743/full"
+
+[[papers.accepted]]
+
+name = "Patching Up Circuit Learning via Parameter Sharing"
+venue = "NeurIPS26"
+date = "December 2026"
+link = "https://arxiv.org/abs/2611.12436"
