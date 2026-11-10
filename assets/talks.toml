@@ -36,5 +36,6 @@ link = "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins
 
 name = "Patching Up Circuit Learning via Parameter Sharing"
 venue = "NeurIPS26"
+place = "Paris"
 date = "December 2026"
 link = "https://arxiv.org/abs/2611.12436"

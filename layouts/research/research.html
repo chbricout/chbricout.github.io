@@ -48,7 +48,7 @@
                 "{{index . "name"}}"
                 {{if collections.IsSet . "link"}}
             </a>
-            {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
+            {{end}}, {{index . "venue"}}, {{ if collections.IsSet . "place"}} {{index . "place"}},{{end}} {{index . "date"}}.
             {{if collections.IsSet . "description"}}
             {{index . "description"}}.
             {{end}}
@@ -73,7 +73,7 @@
                 "{{index . "name"}}"
                 {{if collections.IsSet . "link"}}
             </a>
-            {{end}}, {{index . "venue"}}, {{index . "place"}}, {{index . "date"}}.
+            {{end}}, {{index . "venue"}}, {{ if collections.IsSet . "place"}} {{index . "place"}},{{end}} {{index . "date"}}.
             {{if collections.IsSet . "description"}}
             {{index . "description"}}.
             {{end}}
